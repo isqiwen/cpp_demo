@@ -12,4 +12,4 @@ RUN pip3 install conan --no-cache-dir
 
 # Pre-install all project dependencies using conan.
 COPY . /tmp/repo
-RUN cd /tmp/repo && conan install ./src --build missing -s build_type=Debug
+RUN cd /tmp/repo && conan install ./src --build missing -s build_type=Debug -c tools.system.package_manager:mode=install
