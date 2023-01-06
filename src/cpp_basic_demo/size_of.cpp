@@ -8,4 +8,5 @@ int main()
     std::cout << "sizeof int a[10]: " << sizeof(a) << std::endl;
     std::cout << "sizeof char b[] = \"hello world\": " << sizeof(b) << std::endl;
     std::cout << "sizeof const char *c = \"hello world\": " << sizeof(c) << std::endl;
+
 }
