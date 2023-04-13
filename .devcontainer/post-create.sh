@@ -6,5 +6,5 @@ set -e
 rm -rf build
 mkdir build
 cd build
-conan install ../src -s build_type=Debug
+conan install .. -s build_type=Debug
 cmake ../src -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug
